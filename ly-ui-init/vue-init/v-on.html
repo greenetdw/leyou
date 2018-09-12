@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+
+    <!-- `v-on:click='add'`可以简写为`@click='add'` -->
+    <!--事件中直接写js片段-->
+    <button v-on:click="num++">增加</button><br/>
+    <!--事件指定一个回调函数，必须是Vue实例中定义的函数-->
+    <button v-on:click="decrement">减少</button><br/>
+    <h1>num: {{num}}</h1>
+
+    <div @click.stop="print('div');" style="width:100px;height: 100px;border:1px solid red;">
+        <p @click.stop="print('div');">点我</p>
+    </div>
+
+    <!--<input v-on:keyup.13="submit">-->
+    <input v-on:keyup.enter="submit">
+
+
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    var app = new Vue({
+        el:"#app",
+        data:{
+            num:1
+        },
+        methods:{
+            decrement(){
+                this.num--;
+            },
+            print(msg) {
+                console.log(msg);
+            },
+            submit() {
+                console.log(submit);
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

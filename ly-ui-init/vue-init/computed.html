@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <h1>您的生日是：{{birth}} </h1>
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    new Vue({
+        el:"#app",
+        data:{
+            birthday:1429032123201 ,// 毫秒值
+            dataStr : ""
+        },
+        computed:{
+            birth(){// 计算属性本质是一个方法，但是必须返回结果
+                const d = new Date(this.birthday);
+                return d.getFullYear() + "-" + d.getMonth() + "-" + d.getDay();
+            }
+        },
+        watch : {
+            date: {
+                deep : true,
+                handler() {
+                    const d = new Date(this.date);
+                    this.dataStr = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDay();
+                }
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

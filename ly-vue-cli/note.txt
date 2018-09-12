@@ -1,0 +1,27 @@
+vue init webpack
+
+
+? Generate project in current directory? Yes
+? Project name ly-vue-cli
+? Project description A Vue.js project
+? Author 470277363@qq.com <470277363@qq.com>
+? Vue build standalone
+? Install vue-router? Yes
+? Use ESLint to lint your code? No
+? Set up unit tests No
+? Setup e2e tests with Nightwatch? No
+? Should we run `npm install` for you after the project has been created? (recommended) (Use arrow keys)
+> Yes, use NPM
+  Yes, use Yarn
+  No, I will handle that myself
+
+
+- 可以看到这引入了非常多的依赖，绝大多数都是开发期依赖，比如大量的加载器。
+- 运行时依赖只有vue和vue-router
+- 脚本有三个：
+  - dev：使用了webpack-dev-server命令，开发时热部署使用
+  - start：使用了npm run dev命令，与上面的dev效果完全一样
+  - build：等同于webpack的打包功能，会打包到dist目录下。
+
+我们执行`npm run dev` 或者 `npm start` 都可以启动项目：
+

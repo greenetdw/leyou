@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <input type="text" v-model="message">
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            message:""
+        },
+        watch:{
+            message(newVal, oldVal){
+                console.log(newVal, oldVal);
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

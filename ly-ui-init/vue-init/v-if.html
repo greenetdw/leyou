@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--事件中直接写js片段-->
+    <button v-on:click="show = !show">点击切换</button><br/>
+    <h1 v-if="show">
+        你好
+    </h1>
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    var app = new Vue({
+        el:"#app",
+        data:{
+            show:true
+        }
+    })
+</script>
+</body>
+</html>

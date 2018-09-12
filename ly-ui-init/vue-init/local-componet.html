@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--使用定义好的全局组件-->
+    <counter></counter>
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    // 定义全局组件，两个参数：1，组件名称。2，组件参数
+    const counter = {
+        template:'<button v-on:click="count++">你点了我 {{ count }} 次，我记住了.</button>',
+        data(){
+            return {
+                count:0
+            }
+        }
+    };
+
+    var app = new Vue({
+        el:"#app",
+        components:{
+            counter:counter // 将定义的对象注册为组件
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .active {background:#ccc;width:100px;height:100px;}
+        .hasError {color:red;}
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div v-bind:class="isActive">测试</div>
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            isActive:['active','hasError']
+        }
+    })
+</script>
+
+</body>
+</html>

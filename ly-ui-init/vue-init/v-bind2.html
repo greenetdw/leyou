@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .active {background:#ccc;width:100px;height:100px;}
+        .hasError {color:red;}
+    </style>
+</head>
+<body>
+
+<!--
+
+结果渲染为：
+
+```html
+<div class="static active"></div>
+```
+
+当 `isActive` 或者 `hasError` 变化时，class 列表将相应地更新。例如，如果 `hasError`的值为 `true`，class 列表将变为 `"static active text-danger"`。
+`v-bind:class`可以简写为`:class`
+
+-->
+
+<div id="app">
+    <div class="static"
+         v-bind:class="{ active: isActive, 'text-danger': hasError }">
+    </div>
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            isActive: true,
+            hasError: false
+        }
+    })
+</script>
+
+</body>
+</html>
