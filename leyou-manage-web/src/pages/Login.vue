@@ -20,9 +20,7 @@
                     :append-icon="e1 ? 'visibility' : 'visibility_off'"
                     :append-icon-cb="() => (e1 = !e1)"
                     :type="e1 ? 'text' : 'password'"
-                 >
-
-                  </v-text-field>
+                 ></v-text-field>
                 </v-form>
               </v-card-text>
               <v-card-actions>

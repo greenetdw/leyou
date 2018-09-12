@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+leyou-manage-web/.gitignore
+leyou-manage-web/src/.gitrepo
+leyou-manage-web/src/pages/item/MyBrand.vue
+leyou-manage-web/static/
+ly-api-gateway/src/test/
+ly-common/src/main/resources/
+ly-common/src/test/
+ly-item/ly-item-interface/src/test/
+ly-item/ly-item-service/src/test/
+ly-item/src/
+ly-registry/src/test/
+ly-vue-cli/static/
+src/

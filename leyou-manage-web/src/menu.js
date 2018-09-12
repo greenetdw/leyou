@@ -12,6 +12,7 @@ var menus = [
     items: [
       { title: "分类管理", path: "/category" },
       { title: "品牌管理", path: "/brand" },
+      { title: "我的品牌管理", path: "/myBrand" },
       { title: "商品列表", path: "/list" },
       { title: "规格参数", path: "/specification" }
     ]

@@ -114,6 +114,7 @@
         }
         // 切换开闭状态
         this.open = !this.open;
+
         // 如果已经是叶子节点,或者自己是关闭的，或者自己已经有儿子了，结束
         if (!this.model.isParent || this.isFolder || !this.open) {
           return;

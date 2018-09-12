@@ -860,7 +860,7 @@
       }]
     }]
   }];
-//品牌数据
+
 const brandData = [
   {"id": 1115, "name": "HTC", "image": "", "letter": "H", "categories": null}, {
     "id": 1528,
@@ -893,6 +893,7 @@ const brandData = [
     "letter": "D",
     "categories": null
   }];
+
 // 商品
  const goodsData = [
    {

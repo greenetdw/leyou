@@ -4,14 +4,11 @@ spring:
   application:
     name: item-service
   datasource:
-    url: jdbc:mysql://localhost:3306/heima29
+    url: jdbc:mysql://localhost:3306/heima29?autoReconnect=true&useUnicode=true&createDatabaseIfNotExist=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
     username: root
     password:
-#    hikari:
-#      maximum-pool-size: 30
-#      minimum-idle: 10
-
     driver-class-name: com.mysql.jdbc.Driver
+
 
 
 eureka:
@@ -24,3 +21,7 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
     instance-id: ${spring.application.name}:${server.port}
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

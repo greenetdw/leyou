@@ -50,6 +50,7 @@
         </v-list-group>
       </v-list>
     </v-navigation-drawer>
+    <!--头部工具条-->
     <v-toolbar
       app
       dark
@@ -84,13 +85,15 @@
         <v-icon>account_box</v-icon>
       </v-btn>
     </v-toolbar>
+    <!--中间内容-->
     <v-content>
-          <v-breadcrumbs>
-            <v-icon slot="divider">chevron_right</v-icon>
-            <v-breadcrumbs-item>{{item1}}</v-breadcrumbs-item>
-            <v-breadcrumbs-item>{{item2}}</v-breadcrumbs-item>
-          </v-breadcrumbs>
+        <v-breadcrumbs>
+          <v-icon slot="divider">chevron_right</v-icon>
+          <v-breadcrumbs-item>{{item1}}</v-breadcrumbs-item>
+          <v-breadcrumbs-item>{{item2}}</v-breadcrumbs-item>
+        </v-breadcrumbs>
       <div>
+        <!--锚点-->
         <router-view/>
       </div>
     </v-content>
