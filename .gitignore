@@ -14,3 +14,4 @@ ly-registry/src/test/
 ly-vue-cli/static/
 src/
 target
+node_modules
