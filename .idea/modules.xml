@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/ly-item/ly-item-service/ly-item-service.iml" filepath="$PROJECT_DIR$/ly-item/ly-item-service/ly-item-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ly-registry/ly-registry.iml" filepath="$PROJECT_DIR$/ly-registry/ly-registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/ly-ui-init/ly-ui-init.iml" filepath="$PROJECT_DIR$/ly-ui-init/ly-ui-init.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-upload/ly-upload.iml" filepath="$PROJECT_DIR$/ly-upload/ly-upload.iml" />
       <module fileurl="file://$PROJECT_DIR$/ly-vue-cli/ly-vue-cli.iml" filepath="$PROJECT_DIR$/ly-vue-cli/ly-vue-cli.iml" />
     </modules>
   </component>
